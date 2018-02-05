@@ -44,5 +44,8 @@
 
 
 var Song = Backbone.Model.extend({
-    urlRoot: "https://www.youtube.com/playlist?list=FLaIeuzzt5gYmtWssPT-LO6w"
+    urlRoot: "/api/songs"
 });
+
+var song = new Song({id:1})
+song.fetch();
